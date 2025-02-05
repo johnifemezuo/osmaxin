@@ -7,10 +7,18 @@
   --foreground: #171717;
 }
 
+.folder-shape {
+  clip-path: polygon(38% 0, 44% 17%, 100% 16%, 100% 100%, 0 100%, 0 0);
+  border-radius: 29px;
+
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #1D33A2;
+    --secondary: #F1606F;
   }
 }
 
