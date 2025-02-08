@@ -12,7 +12,7 @@ export default function ServiceCard({
   imageSrc
 }: Readonly<ServiceCardProps>) {
   return (
-    <div className="flex flex-col bg-white folder-shap rounded-xl max-w-[500px]  justify-between px-8 py-8 relative">
+    <div className="flex flex-col bg-white folder-shap rounded-xl max-w-[500px]  justify-between px-8 py-10 relative">
         <Image
           src="/images/logoicon.png"
           width={40}

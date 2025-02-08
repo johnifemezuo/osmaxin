@@ -1,5 +1,14 @@
-export default function SubTitle({children}:{children: React.ReactNode | string}) {
+export default function SubTitle({
+  children,
+}: {
+  children: React.ReactNode | string;
+}) {
   return (
-    <h1 className="uppercase text-zinc-600 text-sm lg:text-base font-medium">{children}</h1>
+    <div className="text-secondary  grid">
+      <div className="bg-secondary h-1 w-12 p-"></div>
+      <h5 className="lg:text-lg font-medium uppercase">{children}</h5>
+
+      
+    </div>
   );
 }
