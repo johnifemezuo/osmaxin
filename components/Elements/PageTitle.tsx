@@ -6,7 +6,7 @@ export default function PageTitle({
   className?: string;
 }>) {
   return (
-    <h1 className={`${className} text-xl lg:text-3xl font-semibold `}>
+    <h1 className={`${className} text-2xl lg:text-3xl font-semibold `}>
       {children}
     </h1>
   );

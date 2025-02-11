@@ -1,4 +1,5 @@
 import { Container } from "@/components/Container/Container";
+import PageTitle from "@/components/Elements/PageTitle";
 import SubTitle from "@/components/Elements/SubTitle";
 import { ArrowRight } from "@/components/Icons/ArrowRight";
 import { ButtonOutline } from "@/components/UI/Button/ButtonOutline";
@@ -7,15 +8,16 @@ import Image from "next/image";
 
 const OurProcess = () => {
   return (
-    <div className=" bg-[#DBE0E9] py-20 lg:py-32">
+    <div className=" bg-[#DBE0E9] py-48 lg:py-32">
       <Container>
         <div>
-          <SubTitle>our process</SubTitle>
-
-          <div className="mt-4 lg:flex items-center justify-between w-full">
-            <h1 className="text-xl lg:text-3xl font-semibold text-zinc-700">
-              We begin projects following due process
-            </h1>
+          <div className="mt-4 lg:flex items-center justify-between w-full px-5 space-y-5 xl:space-y-0 xl:px-0">
+            <div className="space-y-5">
+              <SubTitle>our process</SubTitle>
+              <PageTitle className="text-zinc-700">
+                We begin projects following due process
+              </PageTitle>
+            </div>
 
             <div className="flex space-x-4">
               <span className="w-12 h-12 border-zinc-700 grid place-content-center rounded-full border">
@@ -28,8 +30,8 @@ const OurProcess = () => {
           </div>
 
           <div className="overflow-hidden w-full mt-8 lg:mt-12">
-            <div className="flex space-x-8 w-[6000px] overflow-x-scroll py-12">
-               <ProcessCard
+            <div className="flex space-x-8 w-[6000px] overflow-x-scroll py-12 px-5 xl:px-0">
+              <ProcessCard
                 title="Intro Call"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-1.png"
@@ -101,7 +103,7 @@ const OurProcess = () => {
                 step="3"
                 stepColor="text-[#FB5221]"
                 projectTimeline="3-10 days"
-              /> 
+              />
 
               <div className="flex flex-col bg-primary rounded-lg max-w-[500px]  justify-between px-8 py-10 relative">
                 <div className="w-14 h-14 mb-5 bg-[#DADCEB] rounded-full  items-center justify-center grid place-content-center ">

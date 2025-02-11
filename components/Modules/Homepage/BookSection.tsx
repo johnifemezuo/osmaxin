@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const BookSection = () => {
   return (
-    <div className="py-32 bg-white w-full">
+    <div className="py-32 bg-white w-full px-4 xl:px-0">
       <Container>
-        <div className="flex flex-col lg:flex-row items-center justify-between ">
+        <div className="flex flex-col space-y-12 lg:space-y-0 lg:flex-row items-center justify-between ">
           <div>
-            <PageTitle className="text-zinc-700 mb-8">
+            <PageTitle className="text-zinc-700 mb-8 text-center lg:text-left">
               Tap into the potential of strategic  website design.
             </PageTitle>
 
@@ -52,7 +52,7 @@ const BookSection = () => {
             width={560}
             height={560}
             alt="Osmaxin"
-            className="w-full lg:w-[600px]"
+            className="w-full md:w-[600px]"
           />
         </div>
       </Container>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const ProjectCard = ({title, image, projectType}:{title: string; image: string; projectType: string}) => {
   return (
-    <div className='rounded-xl w-[650px] h-[500px] relative overflow-hidden'>
+    <div className='rounded-xl w-full xl:w-[650px] h-[350px] xl:h-[500px] relative overflow-hidden'>
         <div className='bg-gradient-to-b from-[#0000002c] to-[#00008be3] to-purple-5000 absolute inset-0 z-30'></div>
         <Image src={image} className='w-full h-full object-cover' alt="rushbill" width={400} height={400} />
 
