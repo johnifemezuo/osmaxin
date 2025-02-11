@@ -15,7 +15,7 @@ export default function Nav() {
     <div id="top" className=" w-full z-50 fixed px-3 md:px-0">
       <Container>
         <nav className=" w-full  mx-auto px-2 shadow-xl bg-white md:py- mt-4 rounded-full  ">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex py-2 items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2 ml-5">
               <Image
@@ -73,7 +73,7 @@ export default function Nav() {
 
             {/* Hire Us Button */}
             <div className="hidden md:block">
-              <Button>Hire us</Button>
+              <Button>BOOK A CALL</Button>
             </div>
 
             {/* Mobile Menu Button */}
