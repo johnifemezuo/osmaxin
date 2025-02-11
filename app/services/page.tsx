@@ -1,9 +1,9 @@
-import HeroSection from "@/components/Modules/Homepage/HeroSection";
+import ServicePageHeroSection from "@/components/Modules/ServicePage/ServicePageHeroSection";
 
 export default function ServicesPage() {
     return (
       <div>
-        <HeroSection />
+        <ServicePageHeroSection />
       </div>
     );
   }
