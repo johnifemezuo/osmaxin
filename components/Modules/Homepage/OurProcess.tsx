@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const OurProcess = () => {
   return (
-    <div className=" bg-[#DBE0E9] py-48 lg:py-32">
+    <div className=" bg-[#DBE0E9] py-20 lg:py-32">
       <Container>
         <div>
           <div className="mt-4 lg:flex items-center justify-between w-full px-5 space-y-5 xl:space-y-0 xl:px-0">

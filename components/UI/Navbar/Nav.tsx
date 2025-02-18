@@ -15,7 +15,9 @@ export default function Nav() {
     <div id="top" className=" w-full z-50 fixed px-3 md:px-0">
       <Container>
         <nav className=" w-full  mx-auto px-2 shadow-xl bg-white md:py- mt-4 rounded-full  ">
-          <div className="flex py-2 items-center justify-between">
+          <div className="flex py-2
+          
+           items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2 ml-5">
               <Image
@@ -32,39 +34,39 @@ export default function Nav() {
               <Link
                 href="/services"
                 className={` lg:text-base hover:text-primary transition-all uppercase ${
-                  pathname === "/services" ? "text-primary" : "text-zinc-600"
+                  pathname === "/services" ? "text-secondary" : "text-zinc-600"
                 }`}
               >
                 Services
               </Link>
               <Link
                 href="/about"
-                className={` lg:text-base hover:text-primary transition-all uppercase ${
-                  pathname === "/about" ? "text-primary" : "text-zinc-600"
+                className={` lg:text-base hover:text-secondary transition-all uppercase ${
+                  pathname === "/about" ? "text-secondary" : "text-zinc-600"
                 }`}
               >
                 About us
               </Link>
               <Link
-                href="/work"
-                className={` lg:text-base hover:text-primary transition-all uppercase ${
-                  pathname === "/work" ? "text-primary" : "text-zinc-600"
+                href="/works"
+                className={` lg:text-base hover:text-secondary transition-all uppercase ${
+                  pathname === "/works" ? "text-secondary" : "text-zinc-600"
                 }`}
               >
                 Projects
               </Link>
               <Link
                 href="#contact"
-                className={` lg:text-base hover:text-primary transition-all uppercase ${
-                  pathname === "#contact" ? "text-primary" : "text-zinc-600"
+                className={` lg:text-base hover:text-secondary transition-all uppercase ${
+                  pathname === "#contact" ? "text-secondary" : "text-zinc-600"
                 }`}
               >
                 devhub
               </Link>
               <Link
                 href="#contact"
-                className={` lg:text-base hover:text-primary transition-all uppercase ${
-                  pathname === "#contact" ? "text-primary" : "text-zinc-600"
+                className={` lg:text-base hover:text-secondary transition-all uppercase ${
+                  pathname === "#contact" ? "text-secondary" : "text-zinc-600"
                 }`}
               >
                 Contact us

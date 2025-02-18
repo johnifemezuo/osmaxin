@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const ServicePageHeroSection = () => {
   return (
-    <div className="bg-gradient-to-b from-[#000000] to-[#00008B] to-purple-5000 h-auto ">
+    <div className="bg-gradient-to-b from-[#000000] px-5 to-[#00008B] to-purple-5000 lg:h-auto h-[240vh] ">
       <Container>
-        <div className="h-[190vh] lg:h-[150vh] xl:h-[170vh] 2xl:h-[145vh] relative py-36 lg:pt-36 ">
+        <div className="h-[190vh] lg:h-[150vh] xl:h-[170vh] 2xl:h-[185vh] relative py-36 lg:pt-36 ">
           <h4 className="uppercase lg:text-lg text-white pb-3">our servces</h4>
-          <div className="flex border-y space-x-6 py-12 border-white relative h-[100vh] lg:h-auto flex-col lg:flex-row lg:items-center px-5 w-full xl:px-0">
+          <div className="flex border-y lg:space-x-6 py-6 lg:py-12 border-white relative h-[100vh] lg:h-auto flex-col lg:flex-row lg:items-center px-0 lg:px-5 w-full xl:px-0">
             <div className="flex flex-col  z-30 justify-center h-auto   w-full space-y-8">
               <h1 className="text-4xl font-bold lg:text-5xl xl:text-7xl text-white ">
                 Partner with a{" "}
@@ -21,7 +21,7 @@ const ServicePageHeroSection = () => {
                 </span>
               </h1>
 
-              <div className="flex flex-wrap  gap-4">
+              <div className="flex-wrap  gap-4 hidden lg:flex">
                 <ButtonWithIcon link="/" text="Website developement" />
                 <ButtonWithIcon link="/" text="MOBILE APP DEVELOPEMENT" />
                 <ButtonWithIcon link="/" text="UI/UX DESIGN" />
@@ -31,7 +31,7 @@ const ServicePageHeroSection = () => {
               </div>
             </div>
 
-            <div className="w-[450px] overflow-hidden relative rounded-xl h-[400px]">
+            <div className="lg:w-[450px] overflow-hidden relative rounded-xl mt-8 lg:mt-0 lg:h-[400px]">
               <div className="absolute inset-0 bg-black/40 z-40 w-full h-full"></div>
               <Image
                 src="/images/vid.png"
@@ -58,7 +58,7 @@ const ServicePageHeroSection = () => {
             </div>
           </div>
 
-          <div className="xl:flex items-center py-12 justify-between xl:space-y-0">
+          <div className="xl:flex space-y-8 items-center py-6 lg:py-12 justify-between xl:space-y-0">
             <div className="flex items-center ">
               <ButtonOutline text="Contact us" link="/contact-us" />
             </div>
@@ -68,8 +68,8 @@ const ServicePageHeroSection = () => {
             </div>
           </div>
 
-          <div className="flex bg-white/20 relative z-30 flex-col space-y-4 pt-12 mt-36 xl:mt-52 border-t border-white/20 px-5 xl:px-0">
-            <h1 className="text-white text-lg lg:text-3xl xl:text-4xl -20">
+          <div className="flex rounded-xl lg:rounded-hidden lg:folder-shape bg-white/20 relative z-30 flex-col pb-8 pt-12 space-y-4 lg:pt-12 mt-36 xl:mt-52  xl:p-20 px-5 ">
+            <h1 className="text-white text-lg lg:text-3xl xl:text-4xl xl:mt-20">
               At Osmaxin, we focus on building high quality, efficient and well
               documented applications that ranges from; static and dynamic
               websites, mobile phones applications. We also offer other services
