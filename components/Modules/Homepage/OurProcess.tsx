@@ -35,7 +35,7 @@ const OurProcess = () => {
                 title="Intro Call"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-1.png"
-                step="1"
+                step="Step 1"
                 stepColor="text-[#F58B13]"
                 projectTimeline="2 Weeks"
               />
@@ -43,7 +43,7 @@ const OurProcess = () => {
                 title="Discovery"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-2.png"
-                step="2"
+                step="Step 2"
                 stepColor="text-[#C820F5]"
                 projectTimeline="3-10 days"
               />
@@ -51,7 +51,7 @@ const OurProcess = () => {
                 title="Concept"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-3.png"
-                step="3"
+                step="Step 3"
                 stepColor="text-[#FA5E20]"
                 projectTimeline="3-10 days"
               />
@@ -60,7 +60,7 @@ const OurProcess = () => {
                 title="Homepage Signoff"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-4.png"
-                step="3"
+                step="Step 4"
                 stepColor="text-[#F58B13]"
                 projectTimeline="3-10 days"
               />
@@ -68,7 +68,7 @@ const OurProcess = () => {
                 title="Full Design"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-5.png"
-                step="3"
+                step="Step 5"
                 stepColor="text-[#0C3CFE]"
                 projectTimeline="3-10 days"
               />
@@ -76,7 +76,7 @@ const OurProcess = () => {
                 title="Refine"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-6.png"
-                step="3"
+                step="Step 6"
                 stepColor="text-[#B31CD4]"
                 projectTimeline="3-10 days"
               />
@@ -84,7 +84,7 @@ const OurProcess = () => {
                 title="Develop"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-7.png"
-                step="3"
+                step="Step 7"
                 stepColor="text-[#FA9F34]"
                 projectTimeline="3-10 days"
               />
@@ -92,7 +92,7 @@ const OurProcess = () => {
                 title="Optimize"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-8.png"
-                step="3"
+                step="Step 8"
                 stepColor="text-[#06BAFC]"
                 projectTimeline="3-10 days"
               />
@@ -100,7 +100,7 @@ const OurProcess = () => {
                 title="Launch"
                 description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers,"
                 iconImg="/images/pros-9.png"
-                step="3"
+                step="Step 9"
                 stepColor="text-[#FB5221]"
                 projectTimeline="3-10 days"
               />

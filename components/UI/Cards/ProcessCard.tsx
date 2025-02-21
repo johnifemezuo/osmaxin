@@ -4,9 +4,9 @@ interface ProcessCardProps {
   title: string;
   description: string;
   iconImg: string;
-  step: string;
+  step?: string;
   stepColor: string;
-  projectTimeline: string;
+  projectTimeline?: string;
 }
 
 export default function ProcessCard({
@@ -31,7 +31,7 @@ export default function ProcessCard({
 
       <div className="space-y-4">
         <p className="text-zinc-600 text-sm font-medium">
-          <span className={`${stepColor} uppercase`}> Step {step}</span>{" "}
+          <span className={`${stepColor} uppercase`}> {step}</span>{" "}
           {projectTimeline}
         </p>
         <h1 className="text-2xl font-bold text-zinc-700 mb-2">{title}</h1>

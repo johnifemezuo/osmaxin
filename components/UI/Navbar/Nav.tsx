@@ -56,17 +56,17 @@ export default function Nav() {
                 Projects
               </Link>
               <Link
-                href="#contact"
+                href="/dev-hub"
                 className={` lg:text-base hover:text-secondary transition-all uppercase ${
-                  pathname === "#contact" ? "text-secondary" : "text-zinc-600"
+                  pathname === "/dev-hub" ? "text-secondary" : "text-zinc-600"
                 }`}
               >
                 devhub
               </Link>
               <Link
-                href="#contact"
+                href="/contact-us"
                 className={` lg:text-base hover:text-secondary transition-all uppercase ${
-                  pathname === "#contact" ? "text-secondary" : "text-zinc-600"
+                  pathname === "/contact-us" ? "text-secondary" : "text-zinc-600"
                 }`}
               >
                 Contact us

@@ -1,9 +1,9 @@
 import { Container } from "@/components/Container/Container";
 import FeatureIcon from "@/components/Icons/FeatureIcon";
 
-const ClientType = ({title}:{title: string}) => {
+export const ClientType = ({title}:{title: string}) => {
     return (
-            <div className="inline-flex  items-center space-x-3 lg:space-x-3 bg-[#1F2D60]  rounded-full py-1.5 lg:py-2.5 pl-1.5 lg:pl-3 lg:pr-6 pr-4">
+            <div className="inline-flex  items-center space-x-3 lg:space-x-3 bg-[#1F2D60]  rounded-full py-1.5 lg:py-3 pl-1.5 lg:pl-3 lg:pr-6 pr-4">
                 <FeatureIcon />
                 <p className="text-white font-medium lg:text-base text-sm">
                     {title}
