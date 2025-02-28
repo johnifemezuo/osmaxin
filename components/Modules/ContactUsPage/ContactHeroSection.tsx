@@ -1,3 +1,5 @@
+"use client"
+
 import { Container } from "@/components/Container/Container";
 import { ButtonOutline } from "@/components/UI/Button/ButtonOutline";
 import Image from "next/image";

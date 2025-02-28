@@ -4,7 +4,20 @@ import SubTitle from "@/components/Elements/SubTitle";
 import { ArrowRight } from "@/components/Icons/ArrowRight";
 import TestimonialCard from "@/components/UI/Cards/TestimonialCard";
 
-const Testimonials = () => {
+interface ITestimonial {
+  name: string;
+  title: string;
+  testimonial: string;
+  id: string;
+  clientProject: string;
+  profile: {
+    url: string;
+  };
+}
+
+const Testimonials = ({data}: {data: any}) => {
+  const testimonials = data.testimonials;
+
   return (
     <div className="bg-gradient-to-b from-[#000000] to-[#00008B] to-purple-5000 py-20 lg:py-32">
       <Container>
@@ -28,30 +41,16 @@ const Testimonials = () => {
         </div>
 
         <div className="mt-12 w-[1600px] overflow-scroll px-12  flex items-center space-x-16">
+         
+         {testimonials.map((testimonial: ITestimonial, index: number) => (
           <TestimonialCard
-            title="CEO Evon"
-            name="John Deo"
-            testimonial="Osmaxin offers a high caliber of resources skilled in Microsoft
-                Azure .NET, mobile and Quality Assurance. They became our true
-                business partners over the past three years of our cooperation."
-            image="/images/testimonial-1.png"
+            key={index}
+            title={testimonial.title}
+            name={testimonial.name}
+            testimonial={testimonial.testimonial}
+            image={testimonial.profile?.url}
           />
-          <TestimonialCard
-            title="CEO Evon"
-            name="John Deo"
-            testimonial="Osmaxin offers a high caliber of resources skilled in Microsoft
-                Azure .NET, mobile and Quality Assurance. They became our true
-                business partners over the past three years of our cooperation."
-            image="/images/testimonial-1.png"
-          />
-          <TestimonialCard
-            title="CEO Evon"
-            name="John Deo"
-            testimonial="Osmaxin offers a high caliber of resources skilled in Microsoft
-                Azure .NET, mobile and Quality Assurance. They became our true
-                business partners over the past three years of our cooperation."
-            image="/images/testimonial-1.png"
-          />
+         ))}
         </div>
         </div>
       </Container>

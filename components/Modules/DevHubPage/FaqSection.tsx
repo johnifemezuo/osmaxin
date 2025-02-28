@@ -4,28 +4,19 @@ import { Container } from "@/components/Container/Container";
 import { ChevronUp } from "lucide-react";
 import { useState } from "react";
 
-const FaqSection = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+interface IFaq {
+  question: string;
+  answer: string;
+  id: string;
+}
 
-  const faqData = [
-    {
-      question: "Whaat services do you provide?",
-      answer:
-        "At Osmaxin, we're all about creativity and innovation. Our design services include web design, UI/UX design, mobile app design, branding, and eCommerce design. We also offer development services such as software development, CMS, back-end, front-end, and web development. In addition, our marketing services cover everything from SEO and content marketing to pitch deck design and conversion rate optimization.",
-    },
-    {
-      question: "Whaat services do you provide?",
-      answer: "At Osmaxin, we're all about creativity and innovation...",
-    },
-    {
-      question: "Whaat services do you provide?",
-      answer: "At Osmaxin, we're all about creativity and innovation...",
-    },
-    {
-      question: "Whaat services do you provide?",
-      answer: "At Osmaxin, we're all about creativity and innovation...",
-    },
-  ];
+interface IFaqData {
+  faqs: IFaq[];
+}
+
+const FaqSection = ({data}: {data: IFaqData | any}) => {
+  const [openIndex, setOpenIndex] = useState(0);
+  const faqs = data.faqs;
 
   return (
     <div className="min-h-auto lg:pb-36 bg-gradient-to-b from-[#0E1846] to-[#00008B] to-purple-5000 py-16 px-4">
@@ -33,7 +24,7 @@ const FaqSection = () => {
         <h1 className="text-4xl font-bold text-white text-center mb-12 lg:text-5xl">FAQ</h1>
 
         <div className="space-y-4">
-          {faqData.map((faq, index) => (
+          {faqs.map((faq: IFaq, index: any) => (
             <div
               key={index}
               className={`rounded-2xl overflow-hidden transition-all duration-300 ${

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Wix_Madefor_Display } from "next/font/google";
 import "./globals.css";
 import { Layout } from "@/components/Layout/Layout";
+import { ApolloWrapper } from "@/base/lib/apollo-client";
 
 const wixMadeforDisplay = Wix_Madefor_Display({variable: "--font-wix-madefor-display", subsets: ["latin"]});
 
@@ -17,17 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="author" content="John Ifemezuo Anayo" />
-        <link rel="icon" href="/images/logo-tab.png" />
-        <title>Osmaxin Developers : A Web Design Agency Base in Awka</title>
-      </head>
       <body
         className={` ${wixMadeforDisplay.variable} antialiased`}
       >
-        <Layout>
-        {children}
-        </Layout>
+          <Layout>
+        <ApolloWrapper>
+            {children}
+        </ApolloWrapper>
+          </Layout>
       </body>
     </html>
   );

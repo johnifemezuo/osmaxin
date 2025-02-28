@@ -14,7 +14,11 @@ export default {
         primary: "var(--primary)",
         secondary: "var(--secondary)",
       },
+      fontFamily: {
+        oswald: ["Oswald", "san-serif"],
+        Wix_Madefor_Display: ["Wix_Madefor_Display", "serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 } satisfies Config;

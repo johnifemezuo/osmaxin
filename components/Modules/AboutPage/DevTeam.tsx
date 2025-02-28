@@ -4,7 +4,9 @@ import { ButtonOutlinePrimary } from "@/components/UI/Button/ButtonOutlinePrimar
 import TeamCard from "@/components/UI/Cards/TeamCard";
 import Image from "next/image";
 
-const DevTeam = () => {
+const DevTeam = ({data}: {data: any}) => {
+  const team = data.developers;
+
   return (
     <div className=" bg-[#DBE0E9] py-20 lg:py-32 px-5 xl:px-0">
       <Container>
@@ -33,30 +35,15 @@ const DevTeam = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-4 lg:gap-8 ">
+            {team.map((team: any, index: number) => (
             <TeamCard
-              image="/images/team1.png"
-              title="Founder & Software Engineer"
-              name="Stanley Okechukwu"
-              link="/"
+              key={index}
+              image={team.profilePic?.url}
+              title={team.devTitle}
+              name={team.title}
+              link={team.socialLink}
             />
-            <TeamCard
-              image="/images/team1.png"
-              title="Founder & Software Engineer"
-              name="Stanley Okechukwu"
-              link="/"
-            />
-            <TeamCard
-              image="/images/team1.png"
-              title="Founder & Software Engineer"
-              name="Stanley Okechukwu"
-              link="/"
-            />
-            <TeamCard
-              image="/images/team1.png"
-              title="Founder & Software Engineer"
-              name="Stanley Okechukwu"
-              link="/"
-            />
+            ))}
           </div>
         </div>
       </Container>

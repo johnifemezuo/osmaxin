@@ -18,13 +18,13 @@ const ProjCard = ({
   return (
     <Link href={link}>
         <div className="overflow-hidden space-y-5">
-          <div className="rounded-xl relative">
+          <div className="rounded-xl relative h-[200px] lg:h-[300px]">
             <Image
               src={image}
               alt="osmaxin project"
               width={200}
               height={300}
-              className="w-full rounded-xl transform transition-transform duration-300 hover:scale-105"
+              className="w-full h-full object-cover rounded-xl transform transition-transform duration-300 hover:scale-105"
             />
           </div>
           <div className="flex items-center justify-between">
@@ -39,7 +39,7 @@ const ProjCard = ({
   );
 };
 
-const ProjectSection = () => {
+const ProjectSection = ({projects}: {projects: any}) => {
   return (
     <div className="bg-gradient-to-b px-5 xl:px-0 from-[#0E1846] to-[#00008B] to-purple-5000">
       <Container>
@@ -56,34 +56,15 @@ const ProjectSection = () => {
         </div>
 
         <div className="gap-8 py-20 sm:py-32 lg:py-44 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 ">
+          {projects.map((project: any) => (
           <ProjCard
-            image="/images/work-1.png"
-            title="Rushbill - Building a billing and payment app for people"
-            category="FINTECH"
-            projectType="App Developement"
-            link="/"
+            image={project.coverimage.url}
+            title={project.title}
+            category={project.industry}
+            projectType={project.platform}
+            link={`/works/${project.slug}`}
           />
-          <ProjCard
-            image="/images/work-1.png"
-            title="Rushbill - Building a billing and payment app for people"
-            category="FINTECH"
-            projectType="App Developement"
-            link="/"
-          />
-          <ProjCard
-            image="/images/work-1.png"
-            title="Rushbill - Building a billing and payment app for people"
-            category="FINTECH"
-            projectType="App Developement"
-            link="/"
-          />
-          <ProjCard
-            image="/images/work-1.png"
-            title="Rushbill - Building a billing and payment app for people"
-            category="FINTECH"
-            projectType="App Developement"
-            link="/"
-          />
+          ))}
         </div>
       </Container>
     </div>

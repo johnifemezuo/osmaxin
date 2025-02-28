@@ -4,7 +4,8 @@ import { ArrowRight } from "@/components/Icons/ArrowRight";
 import ProjectCard from "@/components/UI/Cards/ProjectCard";
 import Maquee from "@/components/UI/Maquee";
 
-const FeaturedProject = () => {
+const FeaturedProject = ({projects}: {projects: any}) => {
+  console.log(projects)
   return (
     <div className=" bg-gradient-to-b from-[#000000] overflow-hidden relative to-[#00008B] to-purple-5000 pt-20 pb-44 lg:pt-32 lg:pb-48">
       <Container>
@@ -32,21 +33,16 @@ const FeaturedProject = () => {
         <div className="mt-6 xl:mt-12">
           <div className="overflow-hidden w-full">
             <div className="flex space-x-8 px-5 lg:px-0 w-[2000px] overflow-x-auto py-12">
-              <ProjectCard
-                title="Rushbill"
-                image="/images/proj-1.png"
-                projectType="App Development"
-              />
-              <ProjectCard
-                title="Ventlio"
-                image="/images/proj-2.png"
-                projectType="App Development"
-              />
-              <ProjectCard
-                title="Sqeam"
-                image="/images/proj-1.png"
-                projectType="App Development"
-              />
+             
+              {projects.map((project: any) => (
+                <ProjectCard
+                  key={project.id}
+                  title={project.title}
+                  image={project.coverimage.url}
+                  projectType={project.industry	}
+                  slug={project.slug}
+                />
+              ))}
             </div>
           </div>
         </div>
