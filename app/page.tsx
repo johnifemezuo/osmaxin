@@ -5,7 +5,7 @@ import BookSection from "@/components/Modules/Homepage/BookSection";
 import DeveloperHubSection from "@/components/Modules/Homepage/DeveloperHubSection";
 import FeaturedProject from "@/components/Modules/Homepage/FeaturedProject";
 import HeroSection from "@/components/Modules/Homepage/HeroSection";
-import OurProcess from "@/components/Modules/Homepage/OurProcess";
+import OurProcess from "@/components/Modules/Homepage/OurProcess/OurProcess";
 import OurService from "@/components/Modules/Homepage/OurService";
 import Testimonials from "@/components/Modules/Homepage/Testimonials";
 import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";

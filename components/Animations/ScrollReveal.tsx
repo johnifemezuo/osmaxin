@@ -10,6 +10,7 @@ export const ScrollReveal = ({
   hidden,
   visible,
   duration,
+  staggerchildren,
 }: {
   children: React.ReactNode;
   className?: string;
@@ -17,10 +18,11 @@ export const ScrollReveal = ({
   hidden: { y?: number; x?: number };
   visible: { y?: number; x?: number };
   duration?: number;
+  staggerchildren?: number;
 }) => {
   const easeInVariant = {
     hidden: { y: hidden.y, opacity: 0, x: hidden.x },
-    visible: { y: visible.y, x: visible.x, opacity: 1 },
+    visible: { y: visible.y, x: visible.x, opacity: 1 , staggerChildren: 0.3, when: "beforeChildren", },
   };
 
   const refOne = useRef(null);
@@ -42,7 +44,7 @@ export const ScrollReveal = ({
       initial="hidden"
       animate={mainControls}
       className={className}
-      transition={{ duration: duration ?? 0.8, delay: delay ?? 0.3 }}
+      transition={{ duration: duration ?? 0.8, delay: delay ?? 0.3, }}
     >
       {children}
     </motion.div>

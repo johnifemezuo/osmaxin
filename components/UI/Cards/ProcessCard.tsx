@@ -18,7 +18,7 @@ export default function ProcessCard({
   projectTimeline,
 }: Readonly<ProcessCardProps>) {
   return (
-    <div className="flex flex-col bg-white folder-shape rounded-lg max-w-[500px]  justify-between px-8 py-10 relative">
+    <div className="flex flex-col bg-white folder-shap rounded-lg max-w-[500px]  justify-between px-8 py-10 relative">
       <div className="w-14 h-14 mb-5 bg-[#DADCEB] rounded-full  items-center justify-center grid place-content-center ">
         <Image
           src={iconImg}

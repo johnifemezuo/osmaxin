@@ -6,7 +6,7 @@ const ScrowStar = () => {
     width="39"
     height="39"
     viewBox="0 0 39 39"
-    fill="none"
+    fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path

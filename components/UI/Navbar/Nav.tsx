@@ -12,7 +12,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <div id="top" className=" w-full z-50 fixed px-3 md:px-0">
+      <motion.div   id="top" className=" w-full z-50 fixed px-3 md:px-0">
       <Container>
         <nav className=" w-full  mx-auto px-2 shadow-xl bg-white md:py- mt-4 rounded-full  ">
           <div className="flex py-2
@@ -24,7 +24,7 @@ export default function Nav() {
                 width={200}
                 height={200}
                 src="/images/logo.png"
-                className="w-[140px] lg:w-40"
+                className="w-[140px] h-14 lg:w-40"
                 alt="Aleodev Logo"
               />
             </Link>
@@ -107,6 +107,12 @@ export default function Nav() {
         `}
               >
                 <div className="flex flex-col space-y-4">
+                  <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="flex items-center justify-between"
+                  > 
                   <Link
                     href="/services"
                     className={` text-2xl py-2 hover:text-primary transition-all ${
@@ -118,6 +124,8 @@ export default function Nav() {
                   >
                     Services
                   </Link>
+                  </motion.div>
+                  
                   <Link
                     href="/about"
                     className={` text-2xl py-2 hover:text-primary transition-all ${
@@ -151,6 +159,6 @@ export default function Nav() {
           ) : null}
         </AnimatePresence>
       </Container>
-    </div>
+    </motion.div>
   );
 }

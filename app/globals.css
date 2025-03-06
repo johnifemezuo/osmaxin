@@ -1,6 +1,11 @@
+@import './infinitScroll.css';
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -43,6 +48,50 @@ p {
   line-height: 40cm;
 }
 
+
+
+.intro1 {
+  animation: intro1 2.5s infinite;
+}
+
+.intro2 {
+  animation: upanddown 2.5s infinite 1s;
+  transform: translate(90px, -40px); /* Keep original positioning */
+}
+
+.intro3 {
+  animation: upanddown 2.5s infinite 2s;
+  transform: translate(140px, 90px); /* Keep original positioning */
+}
+
+.intro4 {
+  animation: upanddown 2.5s infinite 3s;
+  transform: translate(150px, 0); /* Keep original positioning */
+}
+
+.intro5 {
+  animation: upanddown 2.5s infinite 4s;
+  transform: translate(-40px, 50px); /* Keep original positioning */
+}
+
+.intro6 {
+  animation: upanddown 2.5s infinite 5s;
+  transform: translate(200px, -20px); /* Keep original positioning */
+}
+
+@keyframes intro1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
 @layer components {
   .pageStyle {
     @apply font-normal prose prose-h5:font-bold prose-p:font-Wix_Madefor_Display prose-zinc  
@@ -54,6 +103,29 @@ p {
     prose-blockquote:pl-4 prose-blockquote:border-zinc-400;
   }
 
+  .card-hover-effect {
+    @apply transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(255,51,102,0.3)];
+  }
+
+  .scroll-container {
+    scrollbar-width: thin;
+  }
+
+  .scroll-container::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .scroll-container::-webkit-scrollbar-track {
+    @apply bg-portfolio-darker rounded-full;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    @apply bg-portfolio-accent/40 rounded-full;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    @apply bg-portfolio-accent/60;
+  }
   
 
   @variants responsive {
