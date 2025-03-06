@@ -153,12 +153,8 @@ export const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="flex items-center justify-between border-t border-gray-800 mt-16 pt-8">
-          <p className="text-sm text-gray-400">
-            © Copyright 2024 Osmaxin. All Rights Reserved.
-          </p>
-
-          <div className="space-x-4 flex items-center">
+        <div className="grid gap-5 lg:flex items-center justify-between border-t border-gray-800 mt-16 pt-8">
+          <div className="space-x-4 flex-1 items-center">
             <a href="terms" className="text-white/70 text-sm hover:text-white">
               Terms of Use
             </a>
@@ -166,6 +162,10 @@ export const Footer = () => {
               Privacy Policy
             </a>
           </div>
+          <p className="text-sm text-gray-400">
+            © Copyright 2024 Osmaxin. All Rights Reserved.
+          </p>
+
         </div>
       </Container>
     </footer>

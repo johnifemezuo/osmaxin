@@ -82,7 +82,7 @@ const HeroSection = () => {
               </motion.div>
             </div>
 
-            <div className="mt-12 lg:-mt-[30px] xl:mt-0 relative xl:absolute w-full xl:right-0 lg:w-[700px] xl:w-[800px] 2xl:w-[700px] z-0 xl:h-[650px]">
+            <div className="mt-28 lg:-mt-[30px] xl:mt-0 relative xl:absolute w-full xl:right-0 lg:w-[700px] xl:w-[800px] 2xl:w-[700px] z-0 xl:h-[650px]">
                 <Appear>
                 <motion.div
                   animate={bounceWithDelay(0)}

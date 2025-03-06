@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import PageTitle from "@/components/Elements/PageTitle";
 import SubTitle from "@/components/Elements/SubTitle";
@@ -7,6 +8,7 @@ import Image from "next/image";
 const DesignServiceSection = () => {
   return (
     <div className="px-5 lg:px-0 bg-gradient-to-b from-[#000000] overflow-hidden relative to-[#00008B] to-purple-5000 pt-20 pb-44 lg:pt-32 lg:pb-48">
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
       <Container>
         <div className=" px-5 py-12 lg:flex justify-between lg:px-12 bg-[#25255E] rounded-2xl lg:folder-shape xl:py-20">
           <div className="xl:space-y-6 lg:pt-6 space-y-4">
@@ -41,6 +43,7 @@ const DesignServiceSection = () => {
           />
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };

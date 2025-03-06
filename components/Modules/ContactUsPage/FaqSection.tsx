@@ -1,5 +1,6 @@
 "use client";
 
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import { ChevronUp } from "lucide-react";
 import { useState } from "react";
@@ -29,6 +30,8 @@ const FaqSection = () => {
 
   return (
     <div className="min-h-auto lg:pb-36 bg-gradient-to-b from-[#0E1846] to-[#00008B] to-purple-5000 py-16 px-4">
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
+
       <Container>
         <h1 className="text-4xl font-bold text-white text-center mb-12 lg:text-5xl">FAQ</h1>
 
@@ -71,6 +74,7 @@ const FaqSection = () => {
           ))}
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };

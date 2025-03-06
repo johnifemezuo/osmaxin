@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import PageTitle from "@/components/Elements/PageTitle";
 import SubTitle from "@/components/Elements/SubTitle";
@@ -7,6 +8,7 @@ import Image from "next/image";
 const SEODevSection = () => {
   return (
     <div className=" bg-[#DBE0E9] py-20 lg:py-32 px-5 xl:px-0">
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
       <Container>
         <div className=" lg:flex lg:space-x-12 justify-between lg:py-12 lg:px-12 bg-white rounded-2xl px-5 py-12 lg:folder-shape">
           <div className="xl:space-y-6 lg:pt-6 space-y-4">
@@ -41,6 +43,7 @@ const SEODevSection = () => {
             />
             </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };

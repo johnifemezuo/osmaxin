@@ -1,11 +1,13 @@
 "use client"
 
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import Image from "next/image";
 
 const ClientLogoSection = () => {
   return (
     <div className="px-5 lg:px-0 bg-gradient-to-b from-[#000000] overflow-hidden relative to-[#00008B] to-purple-5000 py-20  lg:pt-32 lg:pb-48">
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
       <Container>
         <div className="lg:max-w-8xl mx-auto">
             <h1 className="text-white mb-9 text-xl font-semibold lg:text-xl xl:text-3xl  text-center">We contributed to the success of our clients</h1>
@@ -22,6 +24,7 @@ const ClientLogoSection = () => {
             </div>
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,6 +44,8 @@ const ProjectSection = ({projects}: {projects: any}) => {
   return (
     <div className="bg-gradient-to-b px-5 xl:px-0 from-[#0E1846] to-[#00008B] to-purple-5000">
       <Container>
+        <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
+
         <div className="border-y grid border-white/20 lg:flex items-center py-12 justify-between lg:py-24 space-y-8 lg:space-y-0">
           <h1 className="text-3xl lg:text-3xl xl:text-5xl font-bold">
             Projects
@@ -54,7 +57,9 @@ const ProjectSection = ({projects}: {projects: any}) => {
             contribute to your success.
           </p>
         </div>
+        </ScrollReveal>
 
+        <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
         <div className="gap-8 py-20 sm:py-32 lg:py-44 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 ">
           {projects.map((project: any) => (
           <ProjCard
@@ -66,6 +71,7 @@ const ProjectSection = ({projects}: {projects: any}) => {
           />
           ))}
         </div>
+        </ScrollReveal>
       </Container>
     </div>
   );

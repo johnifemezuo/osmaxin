@@ -1,3 +1,4 @@
+import Reveal from "@/components/Animations/Reveal";
 import { Container } from "@/components/Container/Container";
 import Image from "next/image";
 
@@ -8,6 +9,8 @@ const ProjectHeroSection = () => {
         <div className="h-full relative py-36 lg:pt-36 ">
           <h4 className="uppercase lg:text-lg text-white pb-3">about us</h4>
           <div className="flex justify-between border-y lg:space-x-6 py-6 lg:py-20 border-white relative  lg:h-auto flex-col lg:flex-row lg:items-center px-0 lg:px-5 w-full xl:px-0">
+            <Reveal >
+
             <div className="flex flex-col lg:max-w-3xl  z-30 justify-center h-auto   w-full relative space-y-8">
               <Image src="/images/cube.png" alt="" width={200} height={200} className="absolute top-0 right-0 z-0" />
               <h1 className="text-4xl font-bold lg:text-5xl xl:text-8xl capitalize text-white relative z-10 ">
@@ -43,7 +46,9 @@ const ProjectHeroSection = () => {
                 </button>
               </div>
             </div>
+            </Reveal>
 
+            <Reveal delay={0.5}>
             <div className="lg:w-[450px] overflow-hidden relative rounded-xl mt-8 lg:mt-0 h-[220px] lg:h-[400px]">
               <div className="absolute inset-0 bg-black/40 z-40 w-full h-full"></div>
               <Image
@@ -69,6 +74,7 @@ const ProjectHeroSection = () => {
                 </svg>
               </button>
             </div>
+            </Reveal>
           </div>
         </div>
       </Container>

@@ -1,9 +1,11 @@
+import { ScrollReveal } from '@/components/Animations/ScrollReveal'
 import { Container } from '@/components/Container/Container'
 import React from 'react'
 
 const WorkIntroSection = ({industry, platform, services, timeline, year}:{industry: string, platform: string, services: string, timeline: string, year: string}) => {
   return (
     <div className='bg-white py-12 lg:py-20 px-5 xl:px-0'>
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
       <Container>
         <div className='flex flex-wrap justify-between gap-12'>
             <div className='flex flex-col space-y-4'>
@@ -28,6 +30,7 @@ const WorkIntroSection = ({industry, platform, services, timeline, year}:{indust
             </div>
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   )
 }

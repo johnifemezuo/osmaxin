@@ -1,3 +1,5 @@
+"use client"
+
 import BookSection from "@/components/Modules/Homepage/BookSection";
 import OurProcess from "@/components/Modules/Homepage/OurProcess/OurProcess";
 import ClientLogoSection from "@/components/Modules/ServicePage/ClientLogoSection";
@@ -13,7 +15,8 @@ export default function ServicesPage() {
     <div>
       <ServicePageHeroSection />
       <WebDevSection />
-      <DesignServiceSection />
+        <DesignServiceSection />
+      
       <MobileDevSection />
       <DesktopAppServiceSection />
       <SEODevSection />

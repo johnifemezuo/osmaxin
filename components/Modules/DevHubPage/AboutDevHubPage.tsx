@@ -1,9 +1,12 @@
 import { Container } from "@/components/Container/Container";
 import { ClientType } from "../ProjectPage/OurClientTypeSection";
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 
 const AboutDevHubPage = () => {
   return (
-    <div className="bg-gradient-to-b from-[#0E1846] to-[#00008B] to-purple-5000">
+    <div className="bg-gradient-to-b overflow-hidden from-[#0E1846] to-[#00008B] to-purple-5000">
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
+
       <Container>
         <div>
           <div className="flex space-x-12 w-full lg:space-x-20">
@@ -32,6 +35,7 @@ const AboutDevHubPage = () => {
           </div>
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import PageTitle from "@/components/Elements/PageTitle";
 import { ButtonOutlinePrimary } from "@/components/UI/Button/ButtonOutlinePrimary";
@@ -8,6 +9,8 @@ const BookSection = () => {
     <div className="py-32 bg-white w-full px-4 xl:px-0">
       <Container>
         <div className="flex flex-col space-y-12 lg:space-y-0 lg:flex-row items-center justify-between ">
+
+          <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }} delay={0}>
           <div>
             <PageTitle className="text-zinc-700 mb-8 text-center lg:text-left">
               Tap into the potential of strategic  website design.
@@ -46,7 +49,10 @@ const BookSection = () => {
               </div>
             </div>
           </div>
+          </ScrollReveal>
 
+
+          <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }} delay={0.5}>
           <Image
             src="/images/schedule-image.png"
             width={560}
@@ -54,6 +60,8 @@ const BookSection = () => {
             alt="Osmaxin"
             className="w-full md:w-[600px]"
           />
+          </ScrollReveal>
+
         </div>
       </Container>
     </div>

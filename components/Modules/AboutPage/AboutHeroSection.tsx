@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import { ButtonOutline } from "@/components/UI/Button/ButtonOutline";
 import Image from "next/image";
@@ -9,6 +10,8 @@ const AboutHeroSection = () => {
         <div className="h-full relative py-36 lg:pt-36 ">
           <h4 className="uppercase lg:text-lg text-white pb-3">about us</h4>
           <div className="flex border-y lg:space-x-6 py-6 lg:py-9 border-white relative  lg:h-auto flex-col lg:flex-row lg:items-center px-0 lg:px-5 w-full xl:px-0">
+            <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
+
             <div className="flex flex-col  z-30 justify-center h-auto   w-full space-y-8">
               <h1 className="text-4xl font-bold lg:text-5xl xl:text-8xl capitalize text-white ">
                 A result-driven, fun-loving digital agency
@@ -18,7 +21,9 @@ const AboutHeroSection = () => {
                 <ButtonOutline text="Contact us" link="/contact-us" />
               </div>
             </div>
+            </ScrollReveal>
 
+            <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }} delay={0.5}>
             <div className="lg:w-[450px] overflow-hidden relative mt-12  ">
               <Image
                 src="/images/spores.png"
@@ -28,8 +33,11 @@ const AboutHeroSection = () => {
                 className="w-[300px] mx-auto lg:w-full h-full object-cover"
               />
             </div>
+            </ScrollReveal>
+
           </div>
 
+          <ScrollReveal hidden={{ x: 100 }} visible={{ x: 0 }} staggerchildren={0.5} delay={0.5}>
           <div className="py-5 lg:flex items-center lg:space-x-5 lg:space-y-0 space-y-4">
             <button className="bg-[#3B4369] rounded-xl py-5 lg:py-6 px-6 w-full">
               <div className="items-center flex space-x-5">
@@ -77,8 +85,9 @@ const AboutHeroSection = () => {
               </svg>
             </button>
           </div>
+          </ScrollReveal>
 
-          
+
         </div>
       </Container>
     </div>

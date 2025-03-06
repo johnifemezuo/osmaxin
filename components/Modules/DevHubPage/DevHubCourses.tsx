@@ -1,9 +1,12 @@
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import ProcessCard from "@/components/UI/Cards/ProcessCard";
 
 const DevHubCourses = () => {
   return (
     <div className="bg-[#E7EBF1] py-20 lg:py-44 px-5 xl:px-0">
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
+
       <Container>
         <div className="space-y-8">
           <h1 className="text-zinc-800 text-2xl lg:text-4xl font-semibold">Courses We Offer</h1>
@@ -55,6 +58,7 @@ const DevHubCourses = () => {
           </div>
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import PageTitle from "@/components/Elements/PageTitle";
 import { ButtonOutlinePrimary } from "@/components/UI/Button/ButtonOutlinePrimary";
@@ -9,6 +10,7 @@ const DevTeam = ({data}: {data: any}) => {
 
   return (
     <div className=" bg-[#DBE0E9] py-20 lg:py-32 px-5 xl:px-0">
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
       <Container>
         <div className="space-y-8 lg:py-12 lg:px-12 bg-white rounded-2xl px-5 py-12 lg:folder-shape">
           <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row items-baseline w-full justify-between">
@@ -47,6 +49,7 @@ const DevTeam = ({data}: {data: any}) => {
           </div>
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };

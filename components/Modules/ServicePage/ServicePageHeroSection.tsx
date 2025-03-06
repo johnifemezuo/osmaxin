@@ -1,3 +1,6 @@
+import { Appear } from "@/components/Animations/Appear";
+import Reveal from "@/components/Animations/Reveal";
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 import { Container } from "@/components/Container/Container";
 import { ButtonOutline } from "@/components/UI/Button/ButtonOutline";
 import { ButtonWithIcon } from "@/components/UI/Button/ButtonWithIcon";
@@ -12,15 +15,19 @@ const ServicePageHeroSection = () => {
           <h4 className="uppercase lg:text-lg text-white pb-3">our servces</h4>
           <div className="flex border-y lg:space-x-6 py-6 lg:py-12 border-white relative h-[100vh] lg:h-auto flex-col lg:flex-row lg:items-center px-0 lg:px-5 w-full xl:px-0">
             <div className="flex flex-col  z-30 justify-center h-auto   w-full space-y-8">
+              <Reveal>
               <h1 className="text-4xl font-bold lg:text-5xl xl:text-7xl text-white ">
                 Partner with a{" "}
+                
                 <span className="text-secondary">Top-1% Team</span> to
                 Accelerate Your Project Success—Delivering{" "}
                 <span className="text-secondary">
                   2x Faster Results Without the Hassle!
                 </span>
               </h1>
+              </Reveal>
 
+              <Reveal delay={0.3}>
               <div className="flex-wrap  gap-4 hidden lg:flex">
                 <ButtonWithIcon link="/" text="Website developement" />
                 <ButtonWithIcon link="/" text="MOBILE APP DEVELOPEMENT" />
@@ -29,8 +36,10 @@ const ServicePageHeroSection = () => {
                 <ButtonWithIcon link="/" text="DESKTOP APP DEVELOPEMENT" />
                 <ButtonWithIcon link="/" text="WEB APPLICATION" />
               </div>
+              </Reveal>
             </div>
 
+            <Reveal delay={0.5}>
             <div className="lg:w-[450px] overflow-hidden relative rounded-xl mt-8 lg:mt-0 lg:h-[400px]">
               <div className="absolute inset-0 bg-black/40 z-40 w-full h-full"></div>
               <Image
@@ -56,6 +65,8 @@ const ServicePageHeroSection = () => {
                 </svg>
               </button>
             </div>
+            </Reveal>
+
           </div>
 
           <div className="xl:flex space-y-8 items-center py-6 lg:py-12 justify-between xl:space-y-0">
@@ -68,8 +79,10 @@ const ServicePageHeroSection = () => {
             </div>
           </div>
 
+
+          <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
           <div className="flex rounded-xl lg:rounded-hidden lg:folder-shape bg-white/20 relative z-30 flex-col pb-8 pt-12 space-y-4 lg:pt-12 mt-36 xl:mt-52  xl:p-20 px-5 ">
-            <h1 className="text-white text-lg lg:text-3xl xl:text-4xl xl:mt-20">
+            <h1 className="text-white text-lg lg:text-3xl xl:text-4xl ">
               At Osmaxin, we focus on building high quality, efficient and well
               documented applications that ranges from; static and dynamic
               websites, mobile phones applications. We also offer other services
@@ -79,6 +92,7 @@ const ServicePageHeroSection = () => {
               is a team play, right? Let’s aim for the top together!
             </h1>
           </div>
+          </ScrollReveal>
         </div>
       </Container>
     </div>

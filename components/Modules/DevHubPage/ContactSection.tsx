@@ -2,11 +2,13 @@ import { ButtonOutline } from "@/components/UI/Button/ButtonOutline";
 import Image from "next/image";
 import ContactForm from "./ContactForm";
 import { Container } from "@/components/Container/Container";
+import { ScrollReveal } from "@/components/Animations/ScrollReveal";
 
 const ContactSection = () => {
   return (
     <div className="bg-[#e3e5ec] py-36 lg:t-36 px-5 lg:px-0 relative">
       {/* <div className="rounded-xl absolute  bg-[#909bd6] max-w-[1400px] mx-auto h-screen mt-20 z-0"></div> */}
+      <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
       <Container className="">
         <div className="h-full lg:flex lg:space-x-12 relative bg-[#1C2B72] rounded-xl p-6 lg:p-12">
           <div className="lg:w-[400px] xl:w-full">
@@ -110,6 +112,7 @@ const ContactSection = () => {
           <ContactForm />
         </div>
       </Container>
+      </ScrollReveal>
     </div>
   );
 };
