@@ -1,10 +1,10 @@
-import { Container } from "../../Container/Container";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { Container } from "../../Container/Container";
 import { Button } from "../Button/Button";
 
 export default function Nav() {
@@ -30,7 +30,7 @@ export default function Nav() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex md:items-center md:space-x-8">
+            <div className="hidden md:flex md:items-center md:space-x-6">
               <Link
                 href="/services"
                 className={` lg:text-base hover:text-primary transition-all uppercase ${
@@ -46,6 +46,14 @@ export default function Nav() {
                 }`}
               >
                 About us
+              </Link>
+              <Link
+                href="/blog"
+                className={` lg:text-base hover:text-secondary transition-all uppercase ${
+                  pathname === "/blog" ? "text-secondary" : "text-zinc-600"
+                }`}
+              >
+                Blog
               </Link>
               <Link
                 href="/works"
@@ -75,7 +83,9 @@ export default function Nav() {
 
             {/* Hire Us Button */}
             <div className="hidden md:block">
+              <Link target="_blank" href="/https://calendly.com/">
               <Button>BOOK A CALL</Button>
+              </Link>
             </div>
 
             {/* Mobile Menu Button */}
@@ -84,7 +94,7 @@ export default function Nav() {
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden pr-2"
             >
-              <Menu className="h-8 w-8 text-dark" />
+              <Menu className="h-8 w-8 text-primary" />
               <span className="sr-only text-red-700">Toggle menu</span>
             </motion.button>
           </div>
@@ -115,7 +125,7 @@ export default function Nav() {
                   > 
                   <Link
                     href="/services"
-                    className={` text-2xl py-2 hover:text-primary transition-all ${
+                    className={` text-xl uppercase py-2 hover:text-primary transition-all ${
                       pathname === "/services"
                         ? "text-primary"
                         : "text-zinc-600"
@@ -128,7 +138,7 @@ export default function Nav() {
                   
                   <Link
                     href="/about"
-                    className={` text-2xl py-2 hover:text-primary transition-all ${
+                    className={` text-xl uppercase py-2 hover:text-primary transition-all ${
                       pathname === "/about" ? "text-primary" : "text-zinc-600"
                     }`}
                     onClick={() => setIsOpen(false)}
@@ -136,23 +146,35 @@ export default function Nav() {
                     About us
                   </Link>
                   <Link
-                    href="/work"
-                    className={` text-2xl py-2 hover:text-primary transition-all ${
-                      pathname === "/work" ? "text-primary" : "text-zinc-600"
+                    href="/blog"
+                    className={` text-xl uppercase py-2 hover:text-primary transition-all ${
+                      pathname === "/blog" ? "text-primary" : "text-zinc-600"
                     }`}
                     onClick={() => setIsOpen(false)}
                   >
-                    Our Work
+                    Blog
                   </Link>
                   <Link
-                    href="#contact"
-                    className={` text-2xl py-2 hover:text-primary transition-all ${
-                      pathname === "#contact" ? "text-primary" : "text-zinc-600"
+                    href="/works"
+                    className={` text-xl uppercase py-2 hover:text-primary transition-all ${
+                      pathname === "/works" ? "text-primary" : "text-zinc-600"
                     }`}
                     onClick={() => setIsOpen(false)}
-                  >Book us us
+                  >
+                    Work
                   </Link>
-                  <Button>Hire us</Button>
+                  <Link
+                    href="/contact-us"
+                    className={` text-xl uppercase py-2 hover:text-primary transition-all ${
+                      pathname === "/contact-us" ? "text-primary" : "text-zinc-600"
+                    }`}
+                    onClick={() => setIsOpen(false)}
+                  >Contact us
+                  </Link>
+
+                  <Link target="_blank" href="https://calendly.com/">
+                  <Button>Book us</Button>
+                  </Link>
                 </div>
               </div>
             </motion.div>

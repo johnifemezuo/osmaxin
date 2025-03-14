@@ -5,10 +5,12 @@ function Reveal({
   children,
   delay,
   duration,
+  className
 }: Readonly<{
   children: ReactNode;
   delay?: number;
   duration?: number;
+  className?: string;
 }>) {
   return (
     <motion.div
@@ -24,6 +26,7 @@ function Reveal({
         duration: duration ?? 0.8,
         delay: delay ?? 0.8,
       }}
+      className={className}
     >
       {children}
     </motion.div>

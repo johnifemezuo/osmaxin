@@ -16,7 +16,7 @@ export const Button = ({
       onHoverStart={() => console.log("hover started!")}
       className={`${className} space-x-4 py-3 px-3 flex justify-items-center items-center rounded-full justify-center bg-[#E6E7F1] hover:bg-primary/30 text-zinc-800 font-medium`}
     >
-      <span className="pl-2 lg:text-lg uppercase font-medium">{children}</span>{" "}
+      <span className="pl-2 lg:text-base uppercase font-medium">{children}</span>{" "}
       <span className="rounded-full w-9 h-9 place-content-center grid bg-primary ">
         <RightIcon className="text-white -rotate-12 " />
       </span>

@@ -53,9 +53,9 @@ const OurService = () => {
 
               <ServiceCard title="Mobile & Web Application Development" description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers," imageSrc="/images/mobile.png" />
 
-              <ServiceCard title="Web Design" description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers," imageSrc="/images/mobile.png" />
+              <ServiceCard title="Web Design" description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers," imageSrc="/images/webdev.png" />
 
-              <ServiceCard title="Branding Services" description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers," imageSrc="/images/mobile.png" />
+              <ServiceCard title="Branding Services" description="We are the best web development company in New York. We believe that the highest standard makes the happiest customers," imageSrc="/images/graphics.png" />
             </motion.div>
               </ScrollReveal>
             </div>

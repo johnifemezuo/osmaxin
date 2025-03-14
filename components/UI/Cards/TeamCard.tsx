@@ -28,7 +28,7 @@ const TeamCard = ({
         />
 
         <div className="rounded-full grid place-content-center w-10 h-10 z-30 bg-white absolute top-3 right-3">
-          <LinkedinIcon />
+          <LinkedinIcon className="text-primary"/>
         </div>
 
         <div className="space-y-2 absolute bottom-0 z-20 p-4">

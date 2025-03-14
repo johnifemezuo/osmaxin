@@ -30,7 +30,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Wix-Madefor-Display, sans-serif;
+  font-family: Wix-Madefor-Display, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -94,11 +94,11 @@ p {
 
 @layer components {
   .pageStyle {
-    @apply font-normal prose prose-h5:font-bold prose-p:font-Wix_Madefor_Display prose-zinc  
+    @apply font-normal prose prose-h5:font-bold  prose-zinc  
     prose-a:underline prose-base prose-h3:font-bold prose-h3:border-b prose-h1:font-bold 
-    prose-h1:text-4xl lg:prose-lg prose-p:text-lg prose-a:font-bold prose-a:text-[#2160e8] 
+    prose-h1:text-4xl lg:prose-lg prose-p:text-lg prose-a:font-bold prose-a:text-primary 
     prose-a:text-base prose-p:leading-8 prose-img:w-full max-w-none prose-img:h-auto  
-    lg:prose-img:rounded-[20px] prose-img:rounded-[20px] prose-p:text-black  
+    lg:prose-img:rounded-[20px] prose-img:rounded-[20px] prose-p:text-zinc-700  
     prose-img:object-cover prose-img:object-center  prose-blockquote:border-2 
     prose-blockquote:pl-4 prose-blockquote:border-zinc-400;
   }

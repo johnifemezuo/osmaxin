@@ -1,20 +1,13 @@
 "use client";
 
+import { IFaq, IFaqData } from "@/base/interface/IFaq";
 import { Container } from "@/components/Container/Container";
 import { ChevronUp } from "lucide-react";
 import { useState } from "react";
 
-interface IFaq {
-  question: string;
-  answer: string;
-  id: string;
-}
 
-interface IFaqData {
-  faqs: IFaq[];
-}
 
-const FaqSection = ({data}: {data: IFaqData | any}) => {
+const FaqSection = ({data}: {data: IFaqData }) => {
   const [openIndex, setOpenIndex] = useState(0);
   const faqs = data.faqs;
 

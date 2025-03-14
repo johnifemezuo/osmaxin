@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import { EXECUTIVES_QUERY, TEAM_QUERY } from "@/base/query/team";
 import { TEAM_GALARY_QUERY } from "@/base/query/teamGalary";
 import { TESTIMONIAL_QUERY } from "@/base/query/testimonial";
@@ -14,11 +14,11 @@ import ClientLogoSection from "@/components/Modules/ServicePage/ClientLogoSectio
 import { useSuspenseQuery } from "@apollo/experimental-nextjs-app-support/ssr";
 
 export default function AboutPage() {
-  const { data:testimonialData } = useSuspenseQuery(TESTIMONIAL_QUERY);
-  const { data:teamData } = useSuspenseQuery(TEAM_QUERY);
-  const { data:executivesData } = useSuspenseQuery(EXECUTIVES_QUERY);
-  const { data:teamGalaryData } = useSuspenseQuery(TEAM_GALARY_QUERY);
-  
+  const { data: testimonialData } = useSuspenseQuery(TESTIMONIAL_QUERY);
+  const { data: teamData } = useSuspenseQuery(TEAM_QUERY);
+  const { data: executivesData } = useSuspenseQuery(EXECUTIVES_QUERY);
+  const { data: teamGalaryData } = useSuspenseQuery(TEAM_GALARY_QUERY);
+
   return (
     <div>
       <AboutHeroSection />

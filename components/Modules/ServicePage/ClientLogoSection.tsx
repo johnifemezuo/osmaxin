@@ -14,13 +14,13 @@ const ClientLogoSection = () => {
 
             <p className="p-4 text-white text-sm lg:text-base bg-[#000032] max-w-[400px] mx-auto lg:-mb-20 lg:mt-12 relative z-40 border border-white/30 rounded-xl text-center">TRUSTED BY OUR CLIENTS</p>
 
-            <div className="rounded-3xl flex-wrap lg:flex-nowrap border border-white/30 p-9 lg:p-12 xl:px-12 xl:py-20 xl:flex items-center gap-8 xl:space-x-6 w-full mt-8 lg:mt-12 lg:mx-auto">
-                <Image width={200} className=" w-full" height={150} src="/images/client-logo.png" alt="client logo" />
-                <Image width={200} className=" w-full" height={150} src="/images/client-logo.png" alt="client logo" />
-                <Image width={200} className=" w-full" height={150} src="/images/client-logo.png" alt="client logo" />
-                <Image width={200} className=" w-full" height={150} src="/images/client-logo.png" alt="client logo" />
-                <Image width={200} className=" w-full" height={150} src="/images/client-logo.png" alt="client logo" />
-                <Image width={200} className=" w-full" height={150} src="/images/client-logo.png" alt="client logo" />
+            <div className="rounded-3xl flex-wrap border border-white/30 p-9 lg:p-12 xl:px-12 xl:py-20 justify-between flex items-center gap-8 xl:space-x-6 w-full mt-8 lg:mt-12 lg:mx-auto">
+                <Image width={200} className=" max-w-[120px]" height={150} src="/images/client-logo.png" alt="client logo" />
+                <Image width={200} className=" max-w-[120px]" height={150} src="/images/client-logo.png" alt="client logo" />
+                <Image width={200} className=" max-w-[120px]" height={150} src="/images/client-logo.png" alt="client logo" />
+                <Image width={200} className=" max-w-[120px]" height={150} src="/images/client-logo.png" alt="client logo" />
+                <Image width={200} className=" max-w-[120px]" height={150} src="/images/client-logo.png" alt="client logo" />
+                <Image width={200} className=" max-w-[120px]" height={150} src="/images/client-logo.png" alt="client logo" />
             </div>
         </div>
       </Container>

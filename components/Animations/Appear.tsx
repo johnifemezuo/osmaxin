@@ -5,10 +5,12 @@ export const Appear = ({
   children,
   delay,
   duration,
+  className
 }: {
   children: ReactNode;
   delay?: number;
   duration?: number;
+  className?: string;
 }) => {
   return (
     <motion.div
@@ -22,6 +24,7 @@ export const Appear = ({
         duration: duration ?? 0.8,
         delay: delay ?? 0.8,
       }}
+      className={className}
     >
       {children}
     </motion.div>
