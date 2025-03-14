@@ -45,7 +45,7 @@ const ProjCard = ({
 
 const ProjectSection = ({ projects }: { projects: any }) => {
   return (
-    <div className="bg-gradient-to-b px-5 xl:px-0 from-[#0E1846] to-[#00008B] to-purple-5000">
+    <div className='bg-gradient-to-b px-5 xl:px-0 from-[#0E1846] to-[#00008B] to-purple-5000'>
       <Container>
         <ScrollReveal hidden={{ y: 100 }} visible={{ y: 0 }}>
           <div className="border-y grid border-white/20 lg:flex items-center py-12 justify-between lg:py-24 space-y-8 lg:space-y-0">
